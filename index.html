@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Locator</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            z-index: 1;
+        }
+        .controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+        #saveLocation { background: #4CAF50; }
+        #navigateButton { background: #007bff; }
+        #clearLocation { background: #FF5252; }
+        #status {
+            padding: 10px;
+            text-align: center;
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div id="status">Finding your location...</div>
+<div id="map"></div>
+
+<div class="controls">
+    <button id="saveLocation">Save Parking Spot</button>
+    <button id="navigateButton" style="display: none;">Navigate to Parking Spot</button>
+    <button id="clearLocation">Clear Saved Spot</button>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

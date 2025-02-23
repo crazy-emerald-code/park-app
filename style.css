@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saveLocation {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#clearLocation {
+    background-color: #f44336;
+    color: white;
+}
+
+#navigateButton {
+    background-color: #FF9800;
+    color: white;
+}
+
+#backToMap {
+    background-color: #2196F3;
+    color: white;
+}
+
+#status {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#map, #googleMap {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
